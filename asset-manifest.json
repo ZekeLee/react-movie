@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://dingunote.github.com/react-movie/static/css/main.cf506294.css",
-    "main.js": "https://dingunote.github.com/react-movie/static/js/main.eae9ef1b.js",
+    "main.js": "https://dingunote.github.com/react-movie/static/js/main.74772613.js",
     "index.html": "https://dingunote.github.com/react-movie/index.html",
     "main.cf506294.css.map": "https://dingunote.github.com/react-movie/static/css/main.cf506294.css.map",
-    "main.eae9ef1b.js.map": "https://dingunote.github.com/react-movie/static/js/main.eae9ef1b.js.map"
+    "main.74772613.js.map": "https://dingunote.github.com/react-movie/static/js/main.74772613.js.map"
   },
   "entrypoints": [
     "static/css/main.cf506294.css",
-    "static/js/main.eae9ef1b.js"
+    "static/js/main.74772613.js"
   ]
 }
