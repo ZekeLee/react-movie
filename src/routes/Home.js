@@ -16,7 +16,6 @@ export default function Home() {
   useEffect(() => {
     getMovies();
   }, []);
-  console.log(movies);
   return (
     <>
       {isLoad ? (
