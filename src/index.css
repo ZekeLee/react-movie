@@ -7,11 +7,11 @@ html{height:100%;font-size:16px;}
 body{height:100%;font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;color:#222;word-break:break-word;}
 a{color:inherit;text-decoration:none;outline:none;}
 a:hover, a:active{color:inherit;text-decoration:none;}
-#root{padding:1.5rem 1.5rem 0 1.5rem;width:100vw;height:100vh;overflow:hidden;}
+#root{padding:1.5rem 1.5rem 0 1.5rem;width:100vw;overflow:hidden auto;}
 .loading{position:fixed;top:0;left:0;display:flex;align-items:center;justify-content:center;width:100vw;height:100vh;}
 
 /* Home */
-.movie-list{display:flex;height:100%;flex-flow:row wrap;justify-content:space-between;overflow-y:auto;}
+.movie-list{display:flex;height:100%;flex-flow:row wrap;justify-content:space-between;}
 .movie-list > li{display:flex;padding-bottom:1.5rem;width:calc(50% - 0.75rem);}
 .movie-list > li a{display:flex;width:100%;height:15rem;box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
 .movie-list > li img{display:block;height:100%;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;}
@@ -25,7 +25,7 @@ a:hover, a:active{color:inherit;text-decoration:none;}
 
 
 /* Detail */
-.detail-container{display:flex;padding-bottom: 1.5rem;height:100%;overflow-y:auto;}
+.detail-container{display:flex;padding-bottom: 1.5rem;height:100%;}
 .detail-container img{display:block;width:100%;max-width:500px;}
 .detail-container .contents{margin-left:1.5rem;}
 .detail-container .contents > * + *{margin-top:1rem;}
