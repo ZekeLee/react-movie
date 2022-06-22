@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { MutatingDots } from 'react-loader-spinner';
+import FloatingButton from '../components/FloatingButton';
+import Loading from '../components/Loading';
 
 export default function Detail() {
   const [movie, setMovie] = useState();
@@ -18,11 +19,10 @@ export default function Detail() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return isLoad ? (
-    <div className="loading">
-      <MutatingDots color="#222" width={80} height={80} />
-    </div>
+    <Loading />
   ) : (
     <div className="detail-container">
+      <FloatingButton />
       <img src={movie.large_cover_image} alt={movie.title} />
       <div className="contents">
         <h1>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
+import Loading from '../components/Loading';
 import Movie from '../components/Movie';
-import { MutatingDots } from 'react-loader-spinner';
 
 export default function Home() {
   const [isLoad, setIsLoad] = useState(true);
@@ -20,9 +20,7 @@ export default function Home() {
   return (
     <>
       {isLoad ? (
-        <div className="loading">
-          <MutatingDots color="#222" width={80} height={80} />
-        </div>
+        <Loading />
       ) : (
         <ul className="movie-list">
           {movies.map(movie => (

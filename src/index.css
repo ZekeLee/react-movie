@@ -25,6 +25,7 @@ a:hover, a:active{color:inherit;text-decoration:none;}
 
 
 /* Detail */
+.to-home{position:fixed;top:0.5rem;left:0.5rem;display:none;font-size:2rem;}
 .detail-container{display:flex;padding-bottom: 1.5rem;height:100%;}
 .detail-container img{display:block;width:100%;max-width:500px;}
 .detail-container .contents{margin-left:1.5rem;}
@@ -42,6 +43,7 @@ a:hover, a:active{color:inherit;text-decoration:none;}
   .movie-list > li{width:100%;}
 
   /* Detail */
+  .to-home{display:block;}
   .detail-container{margin:0 auto;width:31.25rem;flex-direction:column;align-items:center;}
   .detail-container img{width:100%;max-width:unset;}
   .detail-container .contents{margin:0;padding:1.5rem;}
