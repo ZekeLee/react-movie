@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Movie from '../components/Movie';
+import { MutatingDots } from 'react-loader-spinner';
 
 export default function Home() {
   const [isLoad, setIsLoad] = useState(true);
@@ -7,7 +8,7 @@ export default function Home() {
   const getMovies = async () => {
     const response = await (
       await fetch(
-        'https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year',
+        'https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=rating',
       )
     ).json();
     setMovies(response.data.movies);
@@ -19,7 +20,9 @@ export default function Home() {
   return (
     <>
       {isLoad ? (
-        <h1>Loading...</h1>
+        <div className="loading">
+          <MutatingDots color="#222" width={80} height={80} />
+        </div>
       ) : (
         <ul className="movie-list">
           {movies.map(movie => (

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Movie({
+export default function Movie({
   movieId,
   coverImg,
   movieTitle,
@@ -37,5 +37,3 @@ Movie.propTypes = {
   summary: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-
-export default Movie;
