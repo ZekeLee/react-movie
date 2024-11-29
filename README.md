@@ -1,1 +1,1 @@
-### [배포 URL](https://dingunote.github.io/react-movie)
+### [배포 URL](https://zekelee.github.io/react-movie)
